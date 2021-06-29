@@ -1,5 +1,8 @@
 <template>
   <div>
+    <br/><br/>
+    <h1  class="text-center">Indicadores económicos diarios API REST</h1>
+    <br/>
     <v-layout :wrap="true">
       <v-flex xs12>
         <v-card>
