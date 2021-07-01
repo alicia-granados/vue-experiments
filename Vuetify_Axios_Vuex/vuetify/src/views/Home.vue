@@ -25,7 +25,7 @@
                     </v-card-text>
 
                     <v-card-actions>
-                        <v-btn color ="info" text>
+                        <v-btn color ="info" text @click="dialog=true">
                             Acción
                         </v-btn>
                     </v-card-actions>
@@ -48,19 +48,41 @@
                     </v-card-text>
 
                     <v-card-actions>
-                        <v-btn color ="info" text>
+                        <v-btn color ="info" text @click="dialog=true">
                             Acción
                         </v-btn>
                     </v-card-actions>
                 </v-card>
             </v-flex>
         </v-layout>
+
+        <!-- Dialog -->
+
+        <v-dialog v-model="dialog" width ="500" persistent>
+            <v-card>
+                <v-card-title>Lorem, ipsum dolor.</v-card-title>
+                <v-card-text>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                    </p>
+                </v-card-text>
+                <v-divider></v-divider>
+                <v-card-actions>
+                    <v-btn color="info" text @click="dialog=false">Cerrar</v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-dialog>
+        <!-- Fin Dialog -->
     </v-container>
     
 </template>
 
 <script>
     export default {
-        
+        data(){
+            return {
+                dialog: false
+            }
+        }
     }
 </script>
