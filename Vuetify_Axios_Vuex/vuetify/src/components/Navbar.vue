@@ -1,6 +1,6 @@
 <template>
     <v-content> 
-        <v-toolbar app class="warning">
+        <v-toolbar app class="primary">
 
             <v-app-bar-nav-icon @click="drawer= !drawer"></v-app-bar-nav-icon>
             <v-toolbar-title>Vuetify</v-toolbar-title>
