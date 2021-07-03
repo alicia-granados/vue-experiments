@@ -1,5 +1,5 @@
 <template>
-    <v-container xl > 
+    <v-main xl > 
         <v-toolbar app class="primary">
 
             <v-app-bar-nav-icon @click="drawer= !drawer"></v-app-bar-nav-icon>
@@ -50,7 +50,7 @@
             </v-layout>
         </v-navigation-drawer>
 
-    </v-container>
+    </v-main>
 </template>
 
 <script>

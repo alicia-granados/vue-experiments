@@ -1,7 +1,7 @@
 <template>
-  <v-main  grid-list-xl>
+  <v-main  grid-list-xl >
     <v-layout>
-      <v-flex md6>
+      <v-flex md6 class="mr-8">
         <v-card  class="mb-3" v-for="(item, index) in listaTareas" :key="index">
           <v-card-text>
              <v-chip
@@ -24,8 +24,8 @@
       <v-flex md6 >
         <v-card class="mb-3 pa-3">
           <v-form @submit.prevent="agregarTarea">
-            <v-text-field label="Titulo de tarea" required v-model="titulo"></v-text-field>
-            <v-textarea label="Descripción de tarea" required v-model="descripcion"></v-textarea>
+            <v-text-field label="Titulo de tarea"  v-model="titulo"></v-text-field>
+            <v-textarea label="Descripción de tarea"  v-model="descripcion"></v-textarea>
             <v-btn block color="success" type="submit">Agregar</v-btn>
           </v-form>
         </v-card>
