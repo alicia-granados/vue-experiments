@@ -1,6 +1,6 @@
 <template>
     <v-main xl > 
-        <v-toolbar app class="primary">
+        <v-app-bar  app class="primary">
 
             <v-app-bar-nav-icon @click="drawer= !drawer"></v-app-bar-nav-icon>
             <v-toolbar-title>Vuetify</v-toolbar-title>
@@ -15,7 +15,7 @@
                 Salir 
             </v-btn>
 
-        </v-toolbar>
+        </v-app-bar>
 
         <v-navigation-drawer  app v-model="drawer" temporary >
             <v-layout mt-4 column align-center>
